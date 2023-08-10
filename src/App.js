@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import AbsensiForm from "./AbsensiForm";
+import Acc from "./DataTerkirim";
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<AbsensiForm />} />
-          {/* Tambahkan rute lainnya jika diperlukan */}
+          <Route path="/data" element={<Acc />} />
         </Routes>
       </div>
     </Router>
@@ -16,3 +17,4 @@ const App = () => {
 };
 
 export default App;
+ 
